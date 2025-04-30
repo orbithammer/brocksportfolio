@@ -4,11 +4,22 @@ import LinkedIn from "@/public/icons/linkedin.svg"
 import Mastodon from "@/public/icons/mastodon.svg"
 import Github from "@/public/icons/github.svg"
 import EmailLink from "./components/EmailLink"
+import ResumeLink from "./components/ResumeLink";
+import Tenacity from "@/public/images/tenacity.png"
+import LifelongLearner from "@/public/images/lifelongLearner.png"
+import Mature from "@/public/images/mature.png"
+import GoalOriented from "@/public/images/goalOriented.png"
+import Htlm5 from "@/public/icons/html5.svg"
+import Css3 from "@/public/icons/css3.svg"
+import Js from "@/public/icons/js.svg"
+import React from "@/public/icons/react.svg"
+import TypeScript from "@/public/icons/typescript.svg"
+import Next from "@/public/icons/next.svg"
 
 export default function Home() {
   return (
     <>
-      <header className="flex flex-col md:flex-row items-center md:items-start gap-6 p-6">
+      <header className="flex flex-col md:flex-row items-center md:items-start gap-6 p-6 mx-auto max-w-xl">
         <Image 
           className="rounded-full"
           src={Portrait} 
@@ -63,10 +74,122 @@ export default function Home() {
             </div>
             <div className="flex justify-center mt-4">
               <EmailLink />
+              <ResumeLink />
           </div>
         </div>
       </header>
       <main>
+        <section className="flex flex-col items-center">
+          <h2 className="text-2xl">Why hire me?</h2>
+          <div className="flex mt-4">
+            <div className="flex items-center flex-col max-w-lg mx-2">
+              <Image
+                src={Tenacity}
+                alt="a dog chewing a bone"
+                width={192}
+                height={192}
+                className="rounded-full border-2 border-[#722626] border-solid"
+              />
+              <h3 className="mt-2 text-xl">Tenacious</h3>
+              <p className="mt-2">When I sink my teeth into a coding challenge, I don't stop until it's solved.</p>
+            </div>
+            <div className="flex items-center flex-col max-w-lg mx-2">
+              <Image
+                src={LifelongLearner}
+                alt="a person reading a book"
+                width={192}
+                height={192}
+                className="rounded-full border-2 border-[#722626] border-solid"
+              />
+              <h3 className="mt-2 text-xl">Life-long Learner</h3>
+              <p className="mt-2">When I sink my teeth into a coding challenge, I don't stop until it's solved.</p>
+            </div>
+            <div className="flex items-center flex-col max-w-lg mx-2">
+              <Image
+                src={Mature}
+                alt="a man with a beard wearing a suit"
+                width={192}
+                height={192}
+                className="rounded-lg border-2 border-[#722626] border-solid"
+              />
+              <h3 className="mt-2 text-xl">Mature</h3>
+              <p className="mt-2">When I sink my teeth into a coding challenge, I don't stop until it's solved.</p>
+            </div>
+            <div className="flex items-center flex-col max-w-lg mx-2">
+              <Image
+                src={GoalOriented}
+                alt="an arrow dead center in a target"
+                width={192}
+                height={192}
+                className="rounded-lg border-2 border-[#722626] border-solid"
+              />
+              <h3 className="mt-2 text-xl">Goal Oriented</h3>
+              <p className="mt-2">When I sink my teeth into a coding challenge, I don't stop until it's solved.</p>
+            </div>
+          </div>
+        </section>
+        <section className="flex flex-col items-center">
+          <h2 className="text-2xl mt-4">Technologies</h2>
+          <div className="flex">
+            <h4 className="flex items-center mr-2">
+              <Image 
+                src={Htlm5} 
+                alt="HTML5 icon"
+                width={24}
+                height={24}
+                className="mr-1"
+              />
+              HTML
+            </h4>
+            <h4 className="flex items-center mr-2">
+              <Image 
+                src={Css3} 
+                alt="CSS3 icon"
+                width={24}
+                height={24}
+                className="mr-1"
+              />
+              CSS
+            </h4>
+            <h4 className="flex items-center mr-2">
+              <Image 
+                src={Js} 
+                alt="JavaScript icon"
+                width={24}
+                height={24}
+                className="mr-1"
+              />
+              JavaScript
+            </h4>
+            <h4 className="flex items-center mr-2">
+              <Image 
+                src={React} 
+                alt="React icon"
+                width={24}
+                height={24}
+                className="mr-1"
+              />
+              React
+            </h4>
+            <h4 className="flex items-center mr-2">
+              <Image 
+                src={TypeScript} 
+                alt="TypeScript icon"
+                width={24}
+                height={24}
+                className="mr-1"
+              />
+              TypeScript
+            </h4>
+            <Image 
+              src={Next} 
+              alt="Next.JS icon"
+              width={96}
+              height={96}
+              className="mr-1"
+            />
+          </div>
+        </section>
       </main>
     </>
   );
