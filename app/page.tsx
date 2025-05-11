@@ -19,7 +19,10 @@ import Next from "@/public/icons/next.svg"
 export default function Home() {
   return (
     <>
-      <header className="flex flex-col md:flex-row items-center md:items-start gap-6 p-6 mx-auto max-w-xl">
+      <section 
+        className="flex flex-col md:flex-row items-center md:items-start gap-6 p-6 mx-auto max-w-xl"
+        aria-labelledby="introduction"
+      >
         <Image 
           className="rounded-full"
           src={Portrait} 
@@ -28,8 +31,8 @@ export default function Home() {
           alt="portrait of a middle aged man with a beard" 
         />
         <div className="flex flex-col justify-center my-auto">
-          <h1 className="text-4xl">Hello, my name is <br/><span className="highlight-text">Brock Penner</span>.</h1>
-          <h1 className="text-4xl">I am a <br/><span className="highlight-text">junior developer</span>.</h1>
+          <h1 className="text-4xl">Hello, my name is <br/><span className="text-[#a5ffd9] underline decoration-[#722626]">Brock Penner</span>.</h1>
+          <h1 className="text-4xl">I am a <br/><span className="text-[#a5ffd9] underline decoration-[#722626]">junior developer</span>.</h1>
           <div className="flex items-center justify-center gap-2 mt-4">
             <p>Find me on </p>
             <a 
@@ -77,7 +80,7 @@ export default function Home() {
               <ResumeLink />
           </div>
         </div>
-      </header>
+      </section>
       <main>
         <section className="flex flex-col items-center">
           <h2 className="text-2xl">Why hire me?</h2>
