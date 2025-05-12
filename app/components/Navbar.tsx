@@ -78,24 +78,24 @@ export default function Navbar() {
                 </div>
                 {isMenuOpen && (
                     <div className="md:hidden pt-4 pb-2">
-                        <div className="flex flex-col space-y-3 text-center">
+                        <div className="flex flex-row justify-center space-x-4">
                             <Link
                                 href="/"
-                                className="block py-2 hover:bg-[var(--accent)] hover:text-[var(--primary)] rounded transition-colors"
+                                className={`py-2 px-4 hover:bg-[var(--accent)] hover:text-[var(--primary)] rounded transition-colors ${isActive('/') ? 'text-[#a5ffd9] underline decoration-[#722626]' : ''}`}
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 Home
                             </Link>
                             <Link
                                 href="/about"
-                                className="block py-2 hover:bg-[var(--accent)] hover:text-[var(--primary)] rounded transition-colors"
+                                className={`py-2 px-4 hover:bg-[var(--accent)] hover:text-[var(--primary)] rounded transition-colors ${isActive('/about') ? 'text-[#a5ffd9] underline decoration-[#722626]' : ''}`}
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 About
                             </Link>
                             <Link
                                 href="/projects"
-                                className="block py-2 hover:bg-[var(--accent)] hover:text-[var(--primary)] rounded transition-colors"
+                                className={`py-2 px-4 hover:bg-[var(--accent)] hover:text-[var(--primary)] rounded transition-colors ${isActive('/projects') ? 'text-[#a5ffd9] underline decoration-[#722626]' : ''}`}
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 Projects
