@@ -1,4 +1,3 @@
-// app/projects/page.tsx
 import ProjectCard from "../components/ProjectCard"
 import Html5 from "@/public/icons/html5.svg"
 import Css3 from "@/public/icons/css3.svg"
@@ -6,13 +5,11 @@ import Js from "@/public/icons/js.svg"
 import React from "@/public/icons/react.svg"
 import TypeScript from "@/public/icons/typescript.svg"
 import Next from "@/public/icons/next.svg"
-// Placeholder images - replace these with your actual project screenshots
 import PortfolioImg from "@/public/images/portfolio1.jpg"
 import IsGlitchImg from "@/public/images/isglitch1.jpg"
 import FringeFilmImg from "@/public/images/fringefilm1.jpg"
 
 export default function Projects() {
-  // Project data array
   const projects = [
     {
       title: "isGlitch.com",

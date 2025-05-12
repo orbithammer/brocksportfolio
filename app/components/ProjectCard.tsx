@@ -1,6 +1,6 @@
 "use client"
 
-import Image from "next/image"
+import Image, { StaticImageData } from "next/image"
 import Link from "next/link"
 
 interface Technology {
@@ -11,7 +11,7 @@ interface Technology {
 interface ProjectCardProps {
     title: string
     description: string
-    imageSrc: string
+    imageSrc: StaticImageData | string
     technologies: Technology[]
     link?: string
     slug?:string
