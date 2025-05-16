@@ -56,10 +56,10 @@ export const projectsData: Project[] = [
       { name: "Next.js", icon: "/icons/next.svg" }
     ],
     learnings: [
-      "Improved my skills with TypeScript and Next.js",
-      "Learned about responsive design principles",
-      "Implemented modern CSS techniques",
-      "Created reusable components to maintain consistency throughout the site"
+      "During this project, I significantly enhanced my proficiency in TypeScript and Next.js, gaining deeper understanding of type safety and server-side rendering capabilities that improved both my code quality and application performance.",
+      "I developed a strong foundation in responsive design principles, learning to create layouts that seamlessly adapt across devices while maintaining visual integrity and user experience regardless of screen size.",
+      "I used modern CSS workflows by implementing Tailwind. This streamlined my styling process and allowed me to create complex designs efficiently without writing custom CSS, reducing development time significantly.",
+      "The first version of the portfolio employed Vite and React Router, but I switched to Next.js to take advantage of the descreased rendering times."
     ],
     githubUrl: "https://github.com/username/portfolio",
     liveUrl: "https://portfolio.example.com",
