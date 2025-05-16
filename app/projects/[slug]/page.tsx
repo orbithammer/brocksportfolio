@@ -66,21 +66,21 @@ export default function ProjectPage({ params }: ProjectPageProps) {
       
       <h3 className="text-xl font-bold mb-2">Technologies Used:</h3>
       <div className="flex flex-wrap gap-4 mb-6">
-        {project.technologies.map((tech, index) => (
-          <div 
-            key={index} 
-            className="flex items-center gap-2 px-3 py-2 bg-accent-red text-main-text rounded-md transition-transform hover:scale-105"
-          >
-            <Image 
-              src={tech.icon} 
-              width={24} 
-              height={24} 
-              alt={tech.name} 
-              className="opacity-90"
-            />
-            <span className="font-medium">{tech.name}</span>
-          </div>
-        ))}
+      {project.technologies.map((tech, index) => (
+        <div 
+          key={index} 
+          className="flex items-center gap-2 px-3 py-2 bg-accent-red text-main-text rounded-md transition-transform hover:scale-105"
+        >
+          <Image 
+            src={tech.icon} 
+            width={tech.name === "Next.js" ? 120 : 24} 
+            height={tech.name === "Next.js" ? 120 : 24} 
+            alt={tech.name} 
+            className="opacity-90"
+          />
+          {tech.name !== "Next.js" && <span className="font-medium">{tech.name}</span>}
+        </div>
+      ))}
       </div>
       
       <h3 className="text-xl font-bold mb-2">Description:</h3>
