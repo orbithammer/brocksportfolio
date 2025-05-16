@@ -10,7 +10,7 @@ export interface Project {
   slug: string
   title: string
   description: string
-  image: string
+  // image: string
   images: string[]
   technologies: Technology[]
   learnings: string[]
@@ -25,7 +25,7 @@ export const projectsData: Project[] = [
     slug: "fringefilmfinder",
     title: "Fringe Film Finder",
     description: "A mobile site that uses ChatGPT and Langchain to recommend movies. It draws upon a database of 10k+ titles.",
-    image: "/images/fringefilm1.jpg", // Replace with actual thumbnail image
+    // image: "/images/fringefilm1.jpg", Replace with actual thumbnail image
     images: ["/images/fringefilm1.jpg", "/images/fringefilm2.jpg"], // Replace with actual detail images
     technologies: [
       { name: "HTML", icon: "/icons/html5.svg" },
@@ -47,7 +47,7 @@ export const projectsData: Project[] = [
     slug: "portfolio",
     title: "Portfolio Site",
     description: "My personal portfolio site built with Next.js and TypeScript.",
-    image: "/images/project2.jpg", // Replace with actual thumbnail image
+    // image: "/images/project2.jpg",  Replace with actual thumbnail image
     images: ["/images/portfolio1.jpg", "/images/portfolio2.jpg"], // Replace with actual detail images
     technologies: [
       { name: "HTML", icon: "/icons/html5.svg" },
@@ -69,7 +69,7 @@ export const projectsData: Project[] = [
     slug: "isglitchdotcom",
     title: "isGlitch.com",
     description: "A satirical tech news website.",
-    image: "/images/project3.jpg", // Replace with actual thumbnail image
+    // image: "/images/project3.jpg",  Replace with actual thumbnail image
     images: ["/images/project3-full.jpg", "/images/project3-detail.jpg"], // Replace with actual detail images
     technologies: [
       { name: "HTML", icon: "/icons/html5.svg" },
