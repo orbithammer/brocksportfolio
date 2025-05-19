@@ -11,8 +11,8 @@ type ProjectPageProps = {
   };
 };
 
-export default function ProjectPage({ params }: ProjectPageProps) {
-  const { slug } = params;
+export default async function ProjectPage({ params }: ProjectPageProps) {
+  const { slug } = await params;
   
   // Get project data based on slug
   const project = getProjectBySlug(slug);
