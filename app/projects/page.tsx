@@ -8,9 +8,11 @@ import Next from "@/public/icons/next.svg"
 import PortfolioImg from "@/public/images/portfolio1.jpg"
 import IsGlitchImg from "@/public/images/isglitch1.jpg"
 import FringeFilmImg from "@/public/images/fringefilm1.jpg"
+import { getAllProjects } from "../lib/projects"
 
 export default function Projects() {
-  const projects = [
+  const projects = getAllProjects()
+  /*[
     {
       title: "isGlitch.com",
       description: "A satirical tech news website built with React and TypeScript.",
@@ -45,7 +47,7 @@ export default function Projects() {
         { icon: Next, name: "Next.js" }
       ]
     }
-  ]
+  ]*/
 
   return (
     <main className="max-w-6xl mx-auto p-6">
@@ -61,7 +63,7 @@ export default function Projects() {
             key={index}
             title={project.title}
             description={project.description}
-            imageSrc={project.imageSrc}
+            imageSrc={project.image}
             technologies={project.technologies}
             slug={project.slug}
           />

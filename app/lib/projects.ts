@@ -19,7 +19,7 @@ export interface Project {
   liveIcon?: string
 }
 
-// Sample project data
+// Project data
 export const projectsData: Project[] = [
   {
     slug: "fringefilmfinder",
@@ -31,7 +31,6 @@ export const projectsData: Project[] = [
       { name: "HTML", icon: "/icons/html5.svg" },
       { name: "CSS", icon: "/icons/css3.svg" },
       { name: "React", icon: "/icons/react.svg" },
-      { name: "Next.js", icon: "/icons/next.svg" }
     ],
     learnings: [
       "I found the limitations of prompt engineering. The first iteration of this project gave ChatGPT the user's favorite movie and the type of movie they would like to watch. The results were bland and unimpressive.",
@@ -74,7 +73,8 @@ export const projectsData: Project[] = [
     technologies: [
       { name: "HTML", icon: "/icons/html5.svg" },
       { name: "CSS", icon: "/icons/css3.svg" },
-      { name: "JavaScript", icon: "/icons/js.svg" }
+      { name: "React", icon: "/icons/react.svg" },
+      { name: "Next.js", icon: "/icons/next.svg" }
     ],
     learnings: [
       "Worked with third-party APIs to fetch weather data",
