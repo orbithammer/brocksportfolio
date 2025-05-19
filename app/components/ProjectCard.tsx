@@ -44,8 +44,8 @@ export default function ProjectCard({
                                 <Image
                                     src={tech.icon}
                                     alt={`${tech.name} icon`}
-                                    width={20}
-                                    height={20}
+                                    width={tech.name === "Next.js" ? 80 : 20}
+                                    height={tech.name === "Next.js" ? 80 : 20}
                                 />
                             </div>
                         ))}
