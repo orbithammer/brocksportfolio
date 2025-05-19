@@ -1,9 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { getProjectBySlug } from "@/app/lib/projects"
-// import BackIcon from "@/public/back-icon.svg"
 import GithubIcon from "@/public/icons/github.svg"
-// import LiveSiteIcon from "@/app/components/LiveSiteIcon"
 
 type ProjectPageProps = {
   params: {
@@ -13,11 +11,8 @@ type ProjectPageProps = {
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
   const { slug } = await params;
-  
-  // Get project data based on slug
   const project = getProjectBySlug(slug);
-  
-  // Handle case where project doesn't exist
+
   if (!project) {
     return (
       <main className="max-w-4xl mx-auto p-6">
@@ -26,7 +21,6 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             href="/projects" 
             className="inline-flex items-center text-main-text hover:text-main-color transition-colors"
           >
-            {/* <Image src={BackIcon} width={20} height={20} alt="Back" className="mr-2" /> */}
             <span>Back to projects</span>
           </Link>
         </div>
@@ -43,8 +37,6 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           href="/projects" 
           className="inline-flex items-center text-main-text hover:text-main-color transition-colors"
         >
-          {/* <Image src={BackIcon} width={20} height={20} alt="Back" className="mr-2" /> */}
-          {/* <span>Back to projects</span> */}
         </Link>
       </div>
       
@@ -111,9 +103,8 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center justify-center w-12 h-12 bg-accent-red rounded-full hover:opacity-80 transition-all hover:scale-110 shadow-md"
-          title="View Live Site"
+          title="View FringeFilmFinder Site"
         >
-          {/* <LiveSiteIcon customIcon={project.liveIcon} /> */}
         </a>
       </div>
     </main>

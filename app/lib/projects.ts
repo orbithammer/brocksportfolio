@@ -10,7 +10,7 @@ export interface Project {
   slug: string
   title: string
   description: string
-  // image: string
+  image: string
   images: string[]
   technologies: Technology[]
   learnings: string[]
@@ -25,7 +25,7 @@ export const projectsData: Project[] = [
     slug: "fringefilmfinder",
     title: "Fringe Film Finder",
     description: "A mobile site that uses ChatGPT and Langchain to recommend movies. It draws upon a database of 10k+ titles.",
-    // image: "/images/fringefilm1.jpg", Replace with actual thumbnail image
+    image: "/images/fringefilm1.jpg", // Replace with actual thumbnail image
     images: ["/images/fringefilm1.jpg", "/images/fringefilm2.jpg"], // Replace with actual detail images
     technologies: [
       { name: "HTML", icon: "/icons/html5.svg" },
@@ -40,14 +40,14 @@ export const projectsData: Project[] = [
       "For the third iteration, I converted the movie database to JSON data since I had read it was the most efficient for data retrieval. After rebuilding the app with Langchain, the output became much more reliable."
     ],
     githubUrl: "https://github.com/orbithammer/Fringe-Film-Finder-v2",
-    liveUrl: "https://fringe-film-finder.example.com",
-    liveIcon: "/icons/globe.svg"
+    liveUrl: "https://fringefilmfinder.netlify.app/",
+    liveIcon: "/icons/clapper.svg"
   },
   {
     slug: "portfolio",
     title: "Portfolio Site",
     description: "My personal portfolio site built with Next.js and TypeScript.",
-    // image: "/images/project2.jpg",  Replace with actual thumbnail image
+    image: "/images/portfolio1.jpg", // Replace with actual thumbnail image
     images: ["/images/portfolio1.jpg", "/images/portfolio2.jpg"], // Replace with actual detail images
     technologies: [
       { name: "HTML", icon: "/icons/html5.svg" },
@@ -56,10 +56,10 @@ export const projectsData: Project[] = [
       { name: "Next.js", icon: "/icons/next.svg" }
     ],
     learnings: [
-      "During this project, I significantly enhanced my proficiency in TypeScript and Next.js, gaining deeper understanding of type safety and server-side rendering capabilities that improved both my code quality and application performance.",
-      "I developed a strong foundation in responsive design principles, learning to create layouts that seamlessly adapt across devices while maintaining visual integrity and user experience regardless of screen size.",
-      "I used modern CSS workflows by implementing Tailwind. This streamlined my styling process and allowed me to create complex designs efficiently without writing custom CSS, reducing development time significantly.",
-      "The first version of the portfolio employed Vite and React Router, but I switched to Next.js to take advantage of the descreased rendering times."
+      "Improved my skills with TypeScript and Next.js",
+      "Learned about responsive design principles",
+      "Implemented modern CSS techniques",
+      "Created reusable components to maintain consistency throughout the site"
     ],
     githubUrl: "https://github.com/username/portfolio",
     liveUrl: "https://portfolio.example.com",
@@ -69,7 +69,7 @@ export const projectsData: Project[] = [
     slug: "isglitchdotcom",
     title: "isGlitch.com",
     description: "A satirical tech news website.",
-    // image: "/images/project3.jpg",  Replace with actual thumbnail image
+    image: "/images/project3.jpg", // Replace with actual thumbnail image
     images: ["/images/project3-full.jpg", "/images/project3-detail.jpg"], // Replace with actual detail images
     technologies: [
       { name: "HTML", icon: "/icons/html5.svg" },
