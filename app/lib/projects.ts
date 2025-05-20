@@ -86,9 +86,9 @@ export const projectsData: Project[] = [
       "Pagination was another thing I learned. All in all, I think it worked out well. I also implemented a simple search page so the user can find similar stories on the site.",
       "Finally, I learned Next.js to benefit from the speed improvements. I had to also figure out Tailwind to suplant vanilla CSS. "
     ],
-    githubUrl: "https://github.com/username/weather-app",
-    liveUrl: "https://weather-app.example.com",
-    liveIcon: "/icons/globe.svg"
+    githubUrl: "https://github.com/orbithammer/isglitch-next",
+    liveUrl: "https://theglitchnews.netlify.app",
+    liveIcon: "/icons/logo.svg"
   }
 ]
 
