@@ -31,6 +31,7 @@ export const projectsData: Project[] = [
       { name: "HTML", icon: "/icons/html5.svg" },
       { name: "CSS", icon: "/icons/css3.svg" },
       { name: "React", icon: "/icons/react.svg" },
+      { name: "React Router", icon: "/icons/react-router.svg"}
     ],
     learnings: [
       "I found the limitations of prompt engineering. The first iteration of this project gave ChatGPT the user's favorite movie and the type of movie they would like to watch. The results were bland and unimpressive.",
