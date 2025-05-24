@@ -57,14 +57,14 @@ export const projectsData: Project[] = [
       { name: "Next.js", icon: "/icons/next.svg" }
     ],
     learnings: [
-      "Improved my skills with TypeScript and Next.js",
-      "Learned about responsive design principles",
-      "Implemented modern CSS techniques",
-      "Created reusable components to maintain consistency throughout the site"
+      "I started off with React Router to solidify my skills, but reimplemented the site with Next.js.",
+      "I implemented a light/dark theme that is responsive to the user's preferences.",
+      "I used Tailwind to implemente modern CSS techniques.",
+      "I created reusable components to maintain consistency throughout the site."
     ],
     githubUrl: "https://github.com/username/portfolio",
     liveUrl: "https://portfolio.example.com",
-    liveIcon: "/icons/globe.svg"
+    liveIcon: "/icons/computer.svg"
   },
   {
     slug: "isglitchdotcom",
@@ -84,10 +84,10 @@ export const projectsData: Project[] = [
       "The original idea for this project was to use a combination LLMs and Stable Diffusion. I was going to simulate how The Onion workshops its ideas with LangChain called to various LLM APIs. Unofortunatley, the only LLM with a sense of humor is Anthropic's Claude. The images are the most diffucult part of the process. I sometimes need to download loras. Even if they are not needed, maybe one out of fifty images created are decent. Suffice to say, I learned the limitations of relying on AI for automation.",
       "I also leared a lot about metatags and how they affect SEO. In addition, about how Google will ignore all that and do it's own thing. In the future, I plan to implement server side rendering, but that seems like a steep time investment.",
       "Pagination was another thing I learned. All in all, I think it worked out well. I also implemented a simple search page so the user can find similar stories on the site.",
-      "Finally, I learned Next.js to benifit from the speed improvements. I had to also figure out Tailwind to suplant vanilla CSS. "
+      "Finally, I learned Next.js to benifit from the speed improvements. I had to also figure out Tailwind to supplant vanilla CSS. "
     ],
     githubUrl: "https://theglitchnews@netlify.app",
-    liveUrl: "https://theglitchnews@netlify.app",
+    liveUrl: "https://theglitchnews.netlify.app",
     liveIcon: "/icons/isglitch.svg"
   }
 ]
