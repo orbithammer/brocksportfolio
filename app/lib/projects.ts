@@ -57,10 +57,10 @@ export const projectsData: Project[] = [
       { name: "Next.js", icon: "/icons/next.svg" }
     ],
     learnings: [
-      "I started off with React Router to solidify my skills, but reimplemented the site with Next.js.",
-      "I implemented a light/dark theme that is responsive to the user's preferences.",
-      "I used Tailwind to implemente modern CSS techniques.",
-      "I created reusable components to maintain consistency throughout the site."
+      "Initially built the portfolio using React Router to strengthen my routing fundamentals, then migrated to Next.js for improved performance, SEO benefits, and better developer experience with file-based routing",
+      "Implemented a dynamic light/dark theme system that respects user's system preferences using CSS custom properties and React context, ensuring smooth transitions and persistent state across sessions",
+      "Leveraged Tailwind CSS to implement modern design patterns including responsive grid layouts, fluid typography, and subtle animations while maintaining a consistent design system throughout the application",
+      "Developed a component library of reusable UI elements (buttons, cards, navigation) following atomic design principles, which improved development speed and ensured visual consistency across all pages"
     ],
     githubUrl: "https://github.com/username/portfolio",
     liveUrl: "https://portfolio.example.com",
