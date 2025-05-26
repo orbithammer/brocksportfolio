@@ -57,14 +57,14 @@ export const projectsData: Project[] = [
       { name: "Next.js", icon: "/icons/next.svg" }
     ],
     learnings: [
-      "Improved my skills with TypeScript and Next.js",
-      "Learned about responsive design principles",
-      "Implemented modern CSS techniques",
-      "Created reusable components to maintain consistency throughout the site"
+      "Initially built the portfolio using React Router to strengthen my routing fundamentals, then migrated to Next.js for improved performance, SEO benefits, and better developer experience with file-based routing",
+      "Implemented a dynamic light/dark theme system that respects user's system preferences using CSS custom properties and React context, ensuring smooth transitions and persistent state across sessions",
+      "Leveraged Tailwind CSS to implement modern design patterns including responsive grid layouts, fluid typography, and subtle animations while maintaining a consistent design system throughout the application",
+      "Developed a component library of reusable UI elements (buttons, cards, navigation) following atomic design principles, which improved development speed and ensured visual consistency across all pages"
     ],
     githubUrl: "https://github.com/username/portfolio",
     liveUrl: "https://portfolio.example.com",
-    liveIcon: "/icons/globe.svg"
+    liveIcon: "/icons/computer.svg"
   },
   {
     slug: "isglitchdotcom",
@@ -84,11 +84,11 @@ export const projectsData: Project[] = [
       "The original idea for this project was to use a combination LLMs and Stable Diffusion. I was going to simulate how The Onion workshops its ideas with LangChain called to various LLM APIs. Unofortunatley, the only LLM with a sense of humor is Anthropic's Claude. The images are the most diffucult part of the process. I sometimes need to download loras. Even if they are not needed, maybe one out of fifty images created are decent. Suffice to say, I learned the limitations of relying on AI for automation.",
       "I also leared a lot about metatags and how they affect SEO. In addition, about how Google will ignore all that and do it's own thing. In the future, I plan to implement server side rendering, but that seems like a steep time investment.",
       "Pagination was another thing I learned. All in all, I think it worked out well. I also implemented a simple search page so the user can find similar stories on the site.",
-      "Finally, I learned Next.js to benefit from the speed improvements. I had to also figure out Tailwind to supplant vanilla CSS. "
+      "Finally, I learned Next.js to benifit from the speed improvements. I had to also figure out Tailwind to supplant vanilla CSS. "
     ],
-    githubUrl: "https://github.com/orbithammer/isglitch-next",
+    githubUrl: "https://theglitchnews@netlify.app",
     liveUrl: "https://theglitchnews.netlify.app",
-    liveIcon: "/icons/logo.svg"
+    liveIcon: "/icons/isglitch.svg"
   }
 ]
 

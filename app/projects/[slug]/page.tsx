@@ -105,6 +105,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           className="flex items-center justify-center w-12 h-12 bg-accent-red rounded-full hover:opacity-80 transition-all hover:scale-110 shadow-md"
           title="View FringeFilmFinder Site"
         >
+          <Image src={project.liveIcon} width={28} height={28} alt="project website" />
         </a>
       </div>
     </main>
