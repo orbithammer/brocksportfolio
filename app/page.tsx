@@ -97,7 +97,7 @@ export default function Home() {
                 className="rounded-full border-2 border-var(--accent)] border-solid"
               />
               <h3 className="mt-2 text-xl">Tenacious</h3>
-              <p className="my-2">When I sink my teeth into a coding challenge, I don't stop until it's solved.</p>
+              <p className="my-2">When I sink my teeth into a coding challenge, I don&apos;t stop until it&apos;s solved.</p>
             </div>
             <div className="flex items-center flex-col max-w-lg mx-2">
               <Image

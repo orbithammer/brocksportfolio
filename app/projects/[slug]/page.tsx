@@ -1,5 +1,4 @@
 import Image from "next/image"
-import Link from "next/link"
 import { getProjectBySlug } from "@/app/lib/projects"
 import GithubIcon from "@/public/icons/github.svg"
 
@@ -20,7 +19,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
     return (
       <main className="max-w-4xl mx-auto p-6">
         <h1 className="text-3xl font-bold mb-6">Project Not Found</h1>
-        <p>The project you're looking for doesn't exist.</p>
+        <p>The project you&apos;re looking for doesn&apos;t exist.</p>
       </main>
     )
   }

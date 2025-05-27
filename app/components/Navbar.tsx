@@ -24,7 +24,7 @@ export default function Navbar() {
             >
                 <div className="max-w-6xl mx-auto flex justify-between items-center">
                     <div className="font-bold text-xl">
-                        <Link href="/">Brock Penner's Portfolio</Link>
+                        <Link href="/">Brock Penner&apos;s Portfolio</Link>
                     </div>
                     <div className="hidden md:flex space-x-8">
                         <Link 
