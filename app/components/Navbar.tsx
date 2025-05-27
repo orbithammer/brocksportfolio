@@ -18,7 +18,7 @@ export default function Navbar() {
         <header>
             <nav 
                 className="w-full p-4 shadow-md"
-                style={{ backgroundColor: "var(--background)", color: "#f4f4f4" }}
+                style={{ backgroundColor: "var(--background)" }}
                 role="navigation"
                 aria-label="Main Navigation"
             >
@@ -29,19 +29,19 @@ export default function Navbar() {
                     <div className="hidden md:flex space-x-8">
                         <Link 
                             href="/" 
-                            className={`hover:text-[#a5ffd9] transition-colors ${isActive('/') ? 'text-[#a5ffd9] underline decoration-[#722626]' : ''}`}
+                            className={`hover:text-[var(--primary)] transition-colors ${isActive('/') ? 'text-[var(--primary)] underline decoration-[var(--accent)]' : ''}`}
                         >
                             Home
                         </Link>
                         <Link 
                             href="/about" 
-                            className={`hover:text-[#a5ffd9] transition-colors ${isActive('/about') ? 'text-[#a5ffd9] underline decoration-[#722626]' : ''}`}
+                            className={`hover:text-[var(--primary)] transition-colors ${isActive('/about') ? 'text-[var(--primary)] underline decoration-[var(--accent)]' : ''}`}
                         >
                             About
                         </Link>
                         <Link 
                             href="/projects" 
-                            className={`hover:text-[#a5ffd9] transition-colors ${isActive('/projects') ? 'text-[#a5ffd9] underline decoration-[#722626]' : ''}`}
+                            className={`hover:text-[var(--primary)] transition-colors ${isActive('/projects') ? 'text-[var(--primary)] underline decoration-[var(--accent)]' : ''}`}
                         >
                             Projects
                         </Link>
@@ -81,21 +81,21 @@ export default function Navbar() {
                         <div className="flex flex-row justify-center space-x-4">
                             <Link
                                 href="/"
-                                className={`py-2 px-4 hover:bg-[var(--accent)] hover:text-[var(--primary)] rounded transition-colors ${isActive('/') ? 'text-[#a5ffd9] underline decoration-[#722626]' : ''}`}
+                                className={`py-2 px-4 hover:bg-[var(--primary)] hover:text-[var(--accent)] rounded transition-colors ${isActive('/') ? 'text-[var(--primary)] underline decoration-[var(--accent)]' : ''}`}
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 Home
                             </Link>
                             <Link
                                 href="/about"
-                                className={`py-2 px-4 hover:bg-[var(--accent)] hover:text-[var(--primary)] rounded transition-colors ${isActive('/about') ? 'text-[#a5ffd9] underline decoration-[#722626]' : ''}`}
+                                className={`py-2 px-4 hover:bg-[var(--primary)] hover:text-[var(--accent)] rounded transition-colors ${isActive('/about') ? 'text-[var(--primary)] underline decoration-[var(--accent)]' : ''}`}
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 About
                             </Link>
                             <Link
                                 href="/projects"
-                                className={`py-2 px-4 hover:bg-[var(--accent)] hover:text-[var(--primary)] rounded transition-colors ${isActive('/projects') ? 'text-[#a5ffd9] underline decoration-[#722626]' : ''}`}
+                                className={`py-2 px-4 hover:bg-[var(--primary)] hover:text-[var(--accent)] rounded transition-colors ${isActive('/projects') ? 'text-[var(--primary)] underline decoration-[var(--accent)]' : ''}`}
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 Projects

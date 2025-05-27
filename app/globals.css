@@ -3,21 +3,30 @@
 :root {
   --background: #ededed;
   --foreground: #0a0a0a;
-  --primary: #a5ffd9;
-  --accent: #722626;
+  --primary: #722626;
+  --accent: #a5ffd9;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
+@media (prefers-color-scheme: light), (prefers-color-scheme: no-preference) {
+  .icon {
+    filter: invert(1);
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
-    --primary: #722626;
-    --accent: #a5ffd9;
+    --primary: #a5ffd9;
+    --accent: #722626;
   }
+  .icon {
+      filter: invert(0) !important;
+    }
 }
 
 body {
@@ -25,23 +34,3 @@ body {
   color: var(--foreground);
   font-family: Poppins, Arial, Helvetica, sans-serif;
 }
-
-/* Custom classes */
-/*@layer components {
-  .highlight-text {
-    @apply text-[#a5ffd9] underline decoration-[#722626];
-  }
-  .theme-button {
-    @apply flex flex-row justify-center items-center w-28 p-2.5 rounded-2xl 
-           mx-2 my-0 font-inherit font-bold text-[#f4f4f4] 
-           border border-solid border-[var(--accent)] 
-           shadow-[0_0_7px_var(--accent)] bg-[var(--primary)];
-  }
-  .nav-link-hover {
-    @apply hover:text-[var(--accent)] transition-colors;
-  }
-  .mobile-menu-item {
-    @apply block py-2 hover:bg-[var(--accent)] hover:text-[var(--primary)] 
-           rounded transition-colors;
-  }
-}*/

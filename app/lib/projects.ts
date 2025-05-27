@@ -1,5 +1,3 @@
-// app/lib/projects.ts
-
 // Define project data types
 export interface Technology {
   name: string
@@ -25,8 +23,8 @@ export const projectsData: Project[] = [
     slug: "fringefilmfinder",
     title: "Fringe Film Finder",
     description: "A mobile site that uses ChatGPT and Langchain to recommend movies. It draws upon a database of 10k+ titles.",
-    image: "/images/fringefilm1.jpg", // Replace with actual thumbnail image
-    images: ["/images/fringefilm1.jpg", "/images/fringefilm2.jpg"], // Replace with actual detail images
+    image: "/images/fringefilm1.jpg",
+    images: ["/images/fringefilm1.jpg", "/images/fringefilm2.jpg"],
     technologies: [
       { name: "HTML", icon: "/icons/html5.svg" },
       { name: "CSS", icon: "/icons/css3.svg" },
@@ -47,8 +45,8 @@ export const projectsData: Project[] = [
     slug: "portfolio",
     title: "Portfolio Site",
     description: "My personal portfolio site built with Next.js and TypeScript.",
-    image: "/images/portfolio1.jpg", // Replace with actual thumbnail image
-    images: ["/images/portfolio1.jpg", "/images/portfolio2.jpg"], // Replace with actual detail images
+    image: "/images/portfolio1.jpg",
+    images: ["/images/portfolio1.jpg", "/images/portfolio2.jpg"],
     technologies: [
       { name: "HTML", icon: "/icons/html5.svg" },
       { name: "CSS", icon: "/icons/css3.svg" },
@@ -70,8 +68,8 @@ export const projectsData: Project[] = [
     slug: "isglitchdotcom",
     title: "isGlitch.com",
     description: "A satirical tech news website.",
-    image: "/images/isglitch1.jpg", // Replace with actual thumbnail image
-    images: ["/images/isglitch1.jpg", "/images/isglitch2.jpg"], // Replace with actual detail images
+    image: "/images/isglitch1.jpg",
+    images: ["/images/isglitch1.jpg", "/images/isglitch2.jpg"],
     technologies: [
       { name: "HTML", icon: "/icons/html5.svg" },
       { name: "CSS", icon: "/icons/css3.svg" },
@@ -81,10 +79,10 @@ export const projectsData: Project[] = [
     ],
     learnings: [
       "The main thing I learned was how to implement TypeScript. It is invaluable for scaling up large projects due to early detection of potential errors.",
-      "The original idea for this project was to use a combination LLMs and Stable Diffusion. I was going to simulate how The Onion workshops its ideas with LangChain called to various LLM APIs. Unofortunatley, the only LLM with a sense of humor is Anthropic's Claude. The images are the most diffucult part of the process. I sometimes need to download loras. Even if they are not needed, maybe one out of fifty images created are decent. Suffice to say, I learned the limitations of relying on AI for automation.",
-      "I also leared a lot about metatags and how they affect SEO. In addition, about how Google will ignore all that and do it's own thing. In the future, I plan to implement server side rendering, but that seems like a steep time investment.",
-      "Pagination was another thing I learned. All in all, I think it worked out well. I also implemented a simple search page so the user can find similar stories on the site.",
-      "Finally, I learned Next.js to benifit from the speed improvements. I had to also figure out Tailwind to supplant vanilla CSS. "
+      "The original idea for this project was to use a combination LLMs and Stable Diffusion. I was going to simulate how The Onion workshops its ideas with LangChain called to various LLM APIs. Unofortunatley, the only LLM with a sense of humor is Anthropic's Claude. The images were the most diffucult part of the process. I sometimes need to download loras. Even if they are not needed, maybe one out of fifty images created are decent. Suffice to say, I learned the limitations of relying on AI for automation.",
+      "I also leared a lot about metatags and how they affect SEO. In addition, about how Google will ignore all that and do it's own thing.",
+      "Pagination was another thing I learned. All in all, I think it worked out well. I also implemented a simple search page so the user can find similar stories according to hastags on the site.",
+      "Finally, I learned Next.js to benefit from the speed improvements of SSR. I had to also figure out Tailwind to supplant vanilla CSS. "
     ],
     githubUrl: "https://theglitchnews@netlify.app",
     liveUrl: "https://theglitchnews.netlify.app",
@@ -92,16 +90,12 @@ export const projectsData: Project[] = [
   }
 ]
 
-/**
- * Get all projects
- */
+// Get all projects
 export function getAllProjects(): Project[] {
   return projectsData
 }
 
-/**
- * Get a specific project by slug
- */
+// Get a specific project by slug
 export function getProjectBySlug(slug: string): Project | undefined {
   return projectsData.find(project => project.slug === slug)
 }

@@ -1,53 +1,8 @@
 import ProjectCard from "../components/ProjectCard"
-import Html5 from "@/public/icons/html5.svg"
-import Css3 from "@/public/icons/css3.svg"
-import Js from "@/public/icons/js.svg"
-import React from "@/public/icons/react.svg"
-import TypeScript from "@/public/icons/typescript.svg"
-import Next from "@/public/icons/next.svg"
-import PortfolioImg from "@/public/images/portfolio1.jpg"
-import IsGlitchImg from "@/public/images/isglitch1.jpg"
-import FringeFilmImg from "@/public/images/fringefilm1.jpg"
 import { getAllProjects } from "../lib/projects"
 
 export default function Projects() {
   const projects = getAllProjects()
-  /*[
-    {
-      title: "isGlitch.com",
-      description: "A satirical tech news website built with React and TypeScript.",
-      imageSrc: IsGlitchImg,
-      slug: "isglitchdotcom",
-      technologies: [
-        { icon: Css3, name: "CSS3" },
-        { icon: React, name: "React" },
-        { icon: TypeScript, name: "TypeScript" }
-      ]
-    },
-    {
-      title: "Fringe Film Finder",
-      description: "A movie recommender application that draws on a database of over 10,000 movies.",
-      imageSrc: FringeFilmImg,
-      slug: "fringefilmfinder",
-      technologies: [
-        { icon: Css3, name: "CSS3" },
-        { icon: React, name: "React" },
-        { icon: Js, name: "JavaScript" }
-      ]
-    },
-    {
-      title: "Portfolio Site",
-      description: "The Next.js portfolio website you're browsing right now.",
-      imageSrc: PortfolioImg,
-      slug: "portfolio",
-      technologies: [
-        { icon: Html5, name: "HTML5" },
-        { icon: Css3, name: "CSS3" },
-        { icon: TypeScript, name: "TypeScript" },
-        { icon: Next, name: "Next.js" }
-      ]
-    }
-  ]*/
 
   return (
     <main className="max-w-6xl mx-auto p-6">

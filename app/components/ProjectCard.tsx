@@ -26,7 +26,7 @@ export default function ProjectCard({
     slug
 }: ProjectCardProps) {
     const projectContent = (
-        <div className="flex flex-col h-full border border-[#722626] rounded-lg overflow-hidden hover:shadow-md hover:shadow-[#a5ffd9] transition-shadow duration-300">
+        <div className="flex flex-col h-full border border-[var(--foreground)] rounded-lg overflow-hidden hover:shadow-md hover:shadow-[grey] transition-shadow duration-300">
             <div className="relative h-48 w-full">
                 <Image
                     src={imageSrc}
@@ -36,7 +36,7 @@ export default function ProjectCard({
                 />
             </div>
             <div className="p-4 flex flex-col flex-grow">
-                <h3 className="text-xl font-semibold mb-2 text-[#a5ffd9]">{title}</h3>
+                <h3 className="text-xl font-semibold mb-2 text-[var(--primary)]">{title}</h3>
                 <div className="mb-3">
                     <div className="flex flex-wrap gap-2 mb-2">
                         {technologies.map((tech, index)=>(
@@ -46,6 +46,7 @@ export default function ProjectCard({
                                     alt={`${tech.name} icon`}
                                     width={tech.name === "Next.js" ? 80 : 20}
                                     height={tech.name === "Next.js" ? 80 : 20}
+                                    className="icon"
                                 />
                             </div>
                         ))}

@@ -12,7 +12,7 @@ interface ResumeLinkProps {
 export default function ResumeLink({
     pdfPath = "/files/resumeBrockPenner.pdf",
     buttonText = "Résumé",
-    className =  "flex flex-row justify-center items-center w-28 p-2.5 rounded-2xl mx-2 my-0 font-inherit font-bold text-[#f4f4f4] border border-solid border-[#a5ffd9] shadow-[0_0_7px_#a5ffd9] bg-[#722626]"
+    className = "flex flex-row justify-center items-center w-28 p-2.5 rounded-2xl mx-2 my-0 font-inherit font-bold text-[var(--foreground)] border border-solid border-[var(--primary)] shadow-[0_0_7px_var(--primary)] bg-[var(--accent)]"
 }: ResumeLinkProps = {}) {
     const handleResumeClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
         e.preventDefault()
@@ -32,7 +32,7 @@ export default function ResumeLink({
                 alt="Download icon"
                 width={24}
                 height={24}
-                className="mr-1"
+                className="mr-1 icon"
             />
             {buttonText}
         </a>
