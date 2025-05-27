@@ -3,6 +3,7 @@ import Link from "next/link"
 import { getProjectBySlug } from "@/app/lib/projects"
 import GithubIcon from "@/public/icons/github.svg"
 
+// Updated type definition for Next.js 15 - params is now a Promise
 type ProjectPageProps = {
   params: Promise<{
     slug: string
@@ -10,6 +11,7 @@ type ProjectPageProps = {
 }
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
+  // Await the params Promise in Next.js 15
   const { slug } = await params
   const project = getProjectBySlug(slug)
 
