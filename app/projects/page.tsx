@@ -8,8 +8,7 @@ export default function Projects() {
     <main className="max-w-6xl mx-auto p-6">
       <h1 className="text-3xl font-bold mb-6">My Projects</h1>
       <p className="mb-8">
-        Here you will find a showcase of my development projects. Each project demonstrates
-        different skills and technologies I've worked with.
+        Here you will find a showcase of my development projects. Each project demonstrates different skills and technologies I've worked with.
       </p>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
