@@ -101,7 +101,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             href={project.githubUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center w-12 h-12 bg-accent-red rounded-full hover:opacity-80 transition-all hover:scale-110 shadow-md"
+            className="flex items-center justify-center w-12 h-12 bg-accent-red rounded-full hover:opacity-80 transition-all hover:scale-110 shadow-md icon"
             title="View GitHub Repository"
           >
             <Image src={GithubIcon} width={28} height={28} alt="GitHub" />
@@ -113,7 +113,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center w-12 h-12 bg-accent-red rounded-full hover:opacity-80 transition-all hover:scale-110 shadow-md"
+              className="flex items-center justify-center w-12 h-12 bg-accent-red rounded-full hover:opacity-80 transition-all hover:scale-110 shadow-md icon"
               title="View Live Site"
             >
               <Image src={project.liveIcon} width={28} height={28} alt="Live site" />
