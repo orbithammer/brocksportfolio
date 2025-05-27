@@ -1,0 +1,30 @@
+[build]
+  # Build command for Next.js
+  command = "npm run build"
+  
+  # Output directory for Next.js static export
+  publish = "out"
+  
+  # Node.js version specification
+  environment = { NODE_VERSION = "18.17.0" }
+
+[build.processing]
+  # Skip processing of JS/CSS files since Next.js handles optimization
+  skip_processing = false
+
+  # Handle client-side routing for Next.js static export
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
+
+# Cache headers for static assets
+[[headers]]
+  for = "/_next/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/static/*"
+  [headers.values]  
+    Cache-Control = "public, max-age=31536000"
