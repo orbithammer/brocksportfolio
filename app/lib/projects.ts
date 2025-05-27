@@ -61,7 +61,7 @@ export const projectsData: Project[] = [
       "Developed a component library of reusable UI elements (buttons, cards, navigation) following atomic design principles, which improved development speed and ensured visual consistency across all pages"
     ],
     githubUrl: "https://github.com/username/portfolio",
-    liveUrl: "https://portfolio.example.com",
+    liveUrl: "https://brocksportfolio.netlify.app/",
     liveIcon: "/icons/computer.svg"
   },
   {
@@ -84,7 +84,7 @@ export const projectsData: Project[] = [
       "Pagination was another thing I learned. All in all, I think it worked out well. I also implemented a simple search page so the user can find similar stories according to hastags on the site.",
       "Finally, I learned Next.js to benefit from the speed improvements of SSR. I had to also figure out Tailwind to supplant vanilla CSS. "
     ],
-    githubUrl: "https://theglitchnews@netlify.app",
+    githubUrl: "https://github.com/orbithammer/isglitch-next",
     liveUrl: "https://theglitchnews.netlify.app",
     liveIcon: "/icons/isglitch.svg"
   }

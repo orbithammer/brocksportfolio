@@ -10,8 +10,11 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "Brock Penner | Junior Freelance Developer",
-  description: "Portfolio site for Brock Penner, Junior Freelance Developer",
+  title: "Brock Penner | Junior Developer",
+  description: "Portfolio site for Brock Penner, Junior Developer",
+  icons: {
+    icon: "/logo.svg"
+  }
 };
 
 export default function RootLayout({
