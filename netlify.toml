@@ -6,7 +6,7 @@
   publish = "out"
   
   # Node.js version specification
-  environment = { NODE_VERSION = "18.17.0" }
+  environment = { NODE_VERSION = "20.11.0" }
 
 [build.processing]
   # Skip processing of JS/CSS files since Next.js handles optimization
