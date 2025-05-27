@@ -4,9 +4,9 @@ import { getProjectBySlug } from "@/app/lib/projects"
 import GithubIcon from "@/public/icons/github.svg"
 
 type ProjectPageProps = {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
