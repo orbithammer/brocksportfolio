@@ -66,7 +66,7 @@ export const projectsData: Project[] = [
   },
   {
     slug: "isglitchdotcom",
-    title: "isGlitch.com",
+    title: "isGlitch.com (theglitchnews@netlify.app)",
     description: "A satirical tech news website.",
     image: "/images/isglitch1.jpg",
     images: ["/images/isglitch1.jpg", "/images/isglitch2.jpg"],
