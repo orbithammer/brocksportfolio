@@ -17,7 +17,7 @@ export default function Navbar() {
     return (
         <header>
             <nav 
-                className="w-full p-4 shadow-md"
+                className="w-full p-4"
                 style={{ backgroundColor: "var(--background)" }}
                 role="navigation"
                 aria-label="Main Navigation"
