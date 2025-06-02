@@ -66,7 +66,7 @@ export const projectsData: Project[] = [
     liveUrl: "https://brocksportfolio.netlify.app/",
     liveIcon: "/icons/computer.svg"
   },
-  {
+ /* {
     slug: "fringefilmfinder",
     title: "Fringe Film Finder",
     description: "A mobile site that uses ChatGPT and Langchain to recommend movies. It draws upon a database of 10k+ titles.",
@@ -87,7 +87,7 @@ export const projectsData: Project[] = [
     githubUrl: "https://github.com/orbithammer/Fringe-Film-Finder-v2",
     liveUrl: "https://fringefilmfinder.netlify.app/",
     liveIcon: "/icons/clapper.svg"
-  },
+  },*/
 ]
 
 // Get all projects
